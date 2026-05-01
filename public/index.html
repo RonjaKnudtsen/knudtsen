@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Knudtsen</title>
+  <style>
+    html, body { height: 100%; margin: 0; }
+    body{
+      background-color: rgb(210 210 202);
+      color: #1f1f1f;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    a { color: #11123a; }
+
+    /* full page column */
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* main area grows to fill available space */
+    .content {
+      flex: 1;
+      display: flex;
+      justify-content: center; /* keep your centered layout */
+      align-items: flex-start;
+      padding-top: 10vh;
+    }
+
+    .center { width: 100%; max-width: 800px; }
+
+    .footer {
+      /* margin-top: auto not needed if .content is flex:1, but harmless */
+      background: transparent;
+      padding: 1rem;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <main class="content">
+      <div class="center">
+        <section class="middle-section">
+          <h1>Knudtsen</h1>
+          <hr>
+          <p>
+            Forfatter Ingar Knudtsen: <a href="https://ingar.knudtsen.no">ingar.knudtsen.no</a><br>
+            - Arkivet: <a href="https://ingar.knudtsen.no/archive">ingar.knudtsen.no/archive</a>
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <h6 style="margin-bottom: .1rem">Kontakt</h6>
+      <p>Ronja R. Knudtsen<br>
+        <a href="mailto:ronjark@gmail.com">ronjark@gmail.com</a>
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
