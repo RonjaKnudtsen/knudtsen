@@ -13,12 +13,3 @@
     <lastmod>2026-01-05</lastmod>
   </url>
 </urlset>
-
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-   <sitemap>
-      <loc>https://ingar.knudtsen.no/archive/sitemap.xml</loc>
-   </sitemap>
-   <sitemap>
-      <loc>https://ingar.knudtsen.no/sitemap.xml</loc>
-   </sitemap>
-</sitemapindex>
