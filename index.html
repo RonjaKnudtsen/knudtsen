@@ -32,6 +32,11 @@
     a { color: #11123a; }
     hr { border: none; border-top: 1px solid #1f1f1f; margin: 0.75rem 0; }
 
+    .page-title{
+      font-size: 90pt;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
     .page {
       min-height: 100vh;
       display: flex;
@@ -61,15 +66,20 @@
       margin: 0 0 0.2rem 0;
     }
 
+
+
     .family-section p {
       margin: 0.15rem 0;
       font-size: 0.95rem;
     }
 
-    .family-layout {
-      display: flex;
-      gap: 1.25rem;
-      align-items: flex-start;
+    @media (min-width: 768px) {
+
+      .family-layout {
+        display: flex;
+        gap: 1.25rem;
+        align-items: flex-start;
+      }
     }
 
     .family-layout img {
@@ -98,8 +108,7 @@
   <div class="page">
     <main class="content">
       <div class="center">
-        <h1>Knudtsen</h1>
-        <hr>
+        <h1 class="page-title">Knudtsen</h1>
 
         <div class="family-layout">
           <img src="/ingar_og_gerd_gatur.jpg" alt="Ingar og Gerd Knudtsen på tur">
