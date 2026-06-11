@@ -1,44 +1,93 @@
 <!doctype html>
-<html>
+<html lang="no">
 <head>
   <meta charset="utf-8">
-  <title>Knudtsen</title>
-  
-  <!-- Favicons: -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Knudtsen, familien til forfatter Ingar Knudtsen</title>
+  <meta name="description" content="Knudtsen.no er hjemmesiden til familien Knudtsen, forfatter Ingar Knudtsen, musikeren Toini og resten av familien.">
+
+  <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
 
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Knudtsen",
+    "url": "https://knudtsen.no",
+    "description": "Hjemmesiden til familien Knudtsen"
+  }
+  </script>
+
   <style>
     html, body { height: 100%; margin: 0; }
-    body{
+    body {
       background-color: rgb(210 210 202);
       color: #1f1f1f;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     a { color: #11123a; }
+    hr { border: none; border-top: 1px solid #1f1f1f; margin: 0.75rem 0; }
 
-    /* full page column */
     .page {
       min-height: 100vh;
       display: flex;
       flex-direction: column;
     }
 
-    /* main area grows to fill available space */
     .content {
       flex: 1;
       display: flex;
-      justify-content: center; /* keep your centered layout */
+      justify-content: center;
       align-items: flex-start;
       padding-top: 10vh;
     }
 
-    .center { width: 100%; max-width: 800px; }
+    .center {
+      width: 100%;
+      max-width: 800px;
+      padding: 0 1.5rem;
+    }
+
+    .family-section {
+      margin: 1.4rem 0;
+    }
+
+    .family-section h2 {
+      font-size: 1.05rem;
+      margin: 0 0 0.2rem 0;
+    }
+
+    .family-section p {
+      margin: 0.15rem 0;
+      font-size: 0.95rem;
+    }
+
+    .family-layout {
+      display: flex;
+      gap: 1.25rem;
+      align-items: flex-start;
+    }
+
+    .family-layout img {
+      width: 50%;
+      height: auto;
+      display: block;
+      flex-shrink: 0;
+    }
+
+    .family-layout .sections { flex: 1; }
+
+    .coming-soon {
+      color: #777;
+      font-style: italic;
+      font-size: 0.85rem;
+    }
 
     .footer {
-      /* margin-top: auto not needed if .content is flex:1, but harmless */
       background: transparent;
       padding: 1rem;
       text-align: left;
@@ -49,14 +98,46 @@
   <div class="page">
     <main class="content">
       <div class="center">
-        <section class="middle-section">
-          <h1>Knudtsen</h1>
-          <hr>
-          <p>
-            Forfatter Ingar Knudtsen: <a href="https://ingar.knudtsen.no">ingar.knudtsen.no</a><br>
-            - Arkivet: <a href="https://ingar.knudtsen.no/archive">ingar.knudtsen.no/archive</a>
-          </p>
-        </section>
+        <h1>Knudtsen</h1>
+        <hr>
+
+        <div class="family-layout">
+          <img src="/ingar_og_gerd_gatur.jpg" alt="Ingar og Gerd Knudtsen på tur">
+          <div class="sections">
+            <div class="family-section">
+              <h2>Ingar Knudtsen (1944–2025)</h2>
+              <p>Forfatter,<a href="https://ingar.knudtsen.no">ingar.knudtsen.no</a></p>
+              <p>Arkivet: <a href="https://ingar.knudtsen.no/archive">ingar.knudtsen.no/archive</a></p>
+            </div>
+
+            <div class="family-section">
+              <h2>Gerd Knudtsen (1947–2024)</h2>
+              <p>Sekretær, Helse Møre og Romsdal. <br>Gift med Ingar Knudtsen</p>
+            </div>
+
+            <div class="family-section">
+              <h2>Toini Knudtsen</h2>
+              <p>Musiker, <a href="https://toini.com">toini.com</a></p>
+            </div>
+
+            <div class="family-section">
+              <h2>Vanja Knudtsen</h2>
+              <p>Vernepleier i Kristiansund. <br>Tegnet kart og bokomslag til flere av Ingars bøker.</p>
+            </div>
+
+            <div class="family-section">
+              <h2>Audun Sund Knudtsen</h2>
+              <p><a href="https://www.tiktok.com/@familiensundknudtsen">TikTok</a> · <a href="https://www.instagram.com/audun.k/">Instagram</a></p>
+              <p class="coming-soon">Egen side kommer</p>
+            </div>
+
+            <div class="family-section">
+              <h2>Ronja Rogerdatter Knudtsen</h2>
+              <p>Software Engineer, <a href="https://www.enin.ai">Enin</a>. <br>Utvikler og vedlikeholder av knudtsen.no.</p>
+              <p class="coming-soon">Egen side kommer</p>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
 
