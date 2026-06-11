@@ -32,8 +32,8 @@
     a { color: #11123a; }
     hr { border: none; border-top: 1px solid #1f1f1f; margin: 0.75rem 0; }
 
-    .page-title{
-      font-size: 90pt;
+    .page-title {
+      font-size: clamp(2.5rem, 15vw, 90pt);
       margin-top: 0;
       margin-bottom: 0;
     }
@@ -73,13 +73,10 @@
       font-size: 0.95rem;
     }
 
-    @media (min-width: 768px) {
-
-      .family-layout {
-        display: flex;
-        gap: 1.25rem;
-        align-items: flex-start;
-      }
+    .family-layout {
+      display: flex;
+      gap: 1.25rem;
+      align-items: flex-start;
     }
 
     .family-layout img {
@@ -90,6 +87,12 @@
     }
 
     .family-layout .sections { flex: 1; }
+
+    @media (max-width: 600px) {
+      .content { padding-top: 5vh; }
+      .family-layout { flex-direction: column; }
+      .family-layout img { width: 100%; }
+    }
 
     .coming-soon {
       color: #777;
@@ -115,13 +118,13 @@
           <div class="sections">
             <div class="family-section">
               <h2>Ingar Knudtsen (1944–2025)</h2>
-              <p>Forfatter,<a href="https://ingar.knudtsen.no">ingar.knudtsen.no</a></p>
+              <p>Forfatter, <a href="https://ingar.knudtsen.no">ingar.knudtsen.no</a></p>
               <p>Arkivet: <a href="https://ingar.knudtsen.no/archive">ingar.knudtsen.no/archive</a></p>
             </div>
 
             <div class="family-section">
               <h2>Gerd Knudtsen (1947–2024)</h2>
-              <p>Sekretær, Helse Møre og Romsdal. <br>Gift med Ingar Knudtsen</p>
+              <p>Sekretær, Helse Møre og Romsdal.</p>
             </div>
 
             <div class="family-section">
